@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burbujeo de sucesos</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+  </head>
+  <body class="bg-primary bg-opacity-10">
+    <main class="container p-5">
+      <div class="m-0 d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">
+          Burbujeo de sucesos:
+        </p>
+        <button
+          class="mx-2 col-sm-6 col-md-4 col-lg-2 btn btn-primary btn-sm"
+          onclick="descripcion()"
+        >
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button
+              title="cerrar"
+              class="btn btn-secondary btn-sm"
+              onclick="cerrar()"
+            >
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Burbujeo de sucesos:</b> Diseñar el programa de la figura con las
+            siguientes condiciones:
+          </p>
+          <ol class="fs-5">
+            <li>Estará contenido en un <b>div</b></li>
+            <li>
+              Aprovechando el burbujeo de sucesos se controlarán los eventos al
+              pasar por encima, al hacer click y al hacer doble click con el
+              ratón
+            </li>
+            <li>
+              Al pasar por encima con el ratón se cambia el color de fondo del
+              botón seleccionado a <b>orchid</b> siempre que no sea rojo
+            </li>
+            <li>
+              Al hacer click con el ratón se cambia el color de fondo del botón
+              seleccionado a <b>skyblue</b> siempre que no sea rojo
+            </li>
+            <li>
+              Al hacer doble clic se cambia el color de fondo del botón
+              seleccionado a rojo siempre que ya no lo sea, se establece a coral
+              el color de fondo del texto correspondiente a dicho botón y se
+              copia dicho texto en el textarea
+            </li>
+          </ol>
+        </dialog>
+      </div>
+      <div>
+        <p class="mt-3 fs-5 text-success">¿Qué haciais en el bosque?</p>
+
+        <button type="button" class="btn boton btn-primary border-0">P1</button>
+        <p class="mt-3 fs-5 text-success">
+          Buscábamos comida y bebida, pues nos moriamos de hambre.
+        </p>
+
+        <button type="button" class="btn boton btn-primary border-0">P2</button>
+        <p class="mt-3 fs-5 text-success">
+          Pero, en definitiva. ¿Qué asunto os trajo al bosque?-preguntó el rey
+          enojado.
+        </p>
+
+        <button type="button" class="btn boton btn-primary border-0">P3</button>
+        <p class="mt-3 fs-5 text-success">
+          Thorin cerró entonces la boca y no dijo nada más.
+        </p>
+
+        <button type="button" class="btn boton btn-primary border-0">P4</button>
+        <p class="mt-3 fs-5 text-success">El hobbit (J.R.R. Tolkien)</p>
+
+        <textarea
+          class="my-3 form-control"
+          id="textarea"
+          rows="5"
+          disabled
+        ></textarea>
+      </div>
+
+      <div class="mt-4 d-flex justify-content-center">
+        <a class="col-4 mx-2 btn btn-secondary" href="../index.html">Volver</a>
+      </div>
+    </main>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/sucesos.js"></script>
+  </body>
+</html>
